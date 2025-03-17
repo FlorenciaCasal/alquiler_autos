@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Explorer</title>
+</head>
+<body>
+<h1>Welcome to Our Application</h1>
+
+<p>Hello [(${nameUser})],</p>
+
+<p>We welcome you to our application. Thank you for registering. Below, you will find information about your account:</p>
+
+<ul>
+    <li><strong>Name: </strong> [(${nameUser})]</li>
+    <li><strong>Email: </strong> [(${addressee})]</li>
+
+</ul>
+
+<p>To get started, click on the following link to log in:</p>
+
+<a href="http://app-explorer.s3-website-us-east-1.amazonaws.com/login">Login</a>
+
+<p>Thank you and enjoy our application.</p>
+
+<p>Sincerely,<br>The Explorer Team</p>
+</body>
+</html>
